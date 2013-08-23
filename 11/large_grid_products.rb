@@ -1,4 +1,5 @@
 def solve
+  Dir.chdir(File.dirname(__FILE__))
   file = File.new("large_grid_product.txt", "r")
   data = []
   while (line = file.gets)
